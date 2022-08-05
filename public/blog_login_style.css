@@ -6,6 +6,11 @@ body {
     font-family: "Sofia", sans-serif;
 }
 
+.heading {
+    color: #fff;
+    font-size: xx-large;
+}
+
 .links {
     text-align: right;
     color: white;
@@ -27,23 +32,57 @@ body {
     transition: 0.5s;
 }
 
-.world {
+.loginbox {
+    font-size: x-large;
     width: 400px;
     height: 400px;
     background: transparent;
-    top: 50%;
-    left: 80%;
+    top: 53%;
+    left: 85%;
     position: absolute;
     transform: translate(-50%, -50%);
     box-sizing: border-box;
     color: white;
 }
 
-.earth {
+.loginbox input[type="text"], input[type="password"]
+{
+    border: none;
+    border-bottom: 1px solid rgb(55, 70, 202);
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #4125fb;
+}
+
+.loginbox input[type="submit"]
+{
+    border: none;
+    outline: none;
+    height: 30px;
+    width: 100px;
+    background: #4125fb;
+    color: #fff;
+    font-size: 15px;
+    border-radius: 10px;
+}
+
+.loginbox input[type="submit"]:hover
+{
+    background-color: black;
+    cursor: pointer;
+}
+
+.acc{
+    font-size: medium;
+}
+
+.sect {
+    font-size: x-large;
     width: 400px;
     height: 400px;
     background: transparent;
-    top: 50%;
+    top: 65%;
     right: 55%;
     position: absolute;
     transform: translate(-50%, -50%);
@@ -51,14 +90,13 @@ body {
     color: white;
 }
 
-.blog {
-    width: 200px;
-    height: 200px;
-    background: transparent;
-    top: 20%;
-    right: 37%;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    box-sizing: border-box;
+.sect ol li {
+    font-size: medium;
+    display: block;
+    text-align: left;
+}
+
+h3 {
+    text-align: left;
     color: white;
 }
