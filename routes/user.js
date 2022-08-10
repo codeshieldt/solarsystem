@@ -37,7 +37,15 @@ app.post('/login', async(req, res) => {
     const validPassword = bcrypt.compare(req.body.password, user.password);
     if(!validPassword) return res.status(400).redirect('./login_invalid.html');
 
-    res.redirect('./home.html');
+    res.redirect('./blog_login.html');
+});
+
+app.post('/posted', async(req, res) => {
+    const blog = await findOne(res.body);
+
+    blog = blog.save();
+
+    res.redirect('./blog_login.html');
 });
 
 function loginValidation(req)
