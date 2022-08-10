@@ -3,6 +3,7 @@ const app = express();
 const { User, validate } = require('../models/users')
 const Joi = require('joi');
 const bcrypt = require('bcrypt');
+const mongoose = require('mongoose');
 
 app.get('/', (req, res) => {
     return res.redirect('home.html')
@@ -41,9 +42,7 @@ app.post('/login', async(req, res) => {
 });
 
 app.post('/posted', async(req, res) => {
-    const blog = await findOne(res.body);
-
-    blog = blog.save();
+    mongoose.save();
 
     res.redirect('./blog_login.html');
 });
