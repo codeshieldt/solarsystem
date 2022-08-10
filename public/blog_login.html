@@ -7,7 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia"/>
         <link rel="icon" type="image/x-icon" href="favicon.ico">
-        <link href="./login_style.css" rel="stylesheet" type="text/css"/>
+        <link href="./blog_login_style.css" rel="stylesheet" type="text/css"/>
         <title> Web-Page </title>
     </head>
 
@@ -20,11 +20,11 @@
                 <li><a href="./signup.html"> SIGN UP </a></li>
             </ul>
         </div>
-        <div class="loginbox">
+        <div class="blogbox">
             <form action="/post" method="post">
-                <input type="text" name="email" placeholder="Enter Email.." required/>
+                <textarea name="text" placeholder="Enter your blog" rows="25" cols="50" wrap required></textarea>
                 <p>
-                    <input type="submit" value="Login"/>
+                    <input type="submit" value="Post"/>
                 </p>
             </form>
         </div>
