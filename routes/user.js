@@ -4,6 +4,7 @@ const { User, validate } = require('../models/users')
 const Joi = require('joi');
 const bcrypt = require('bcrypt');
 const mongoose = require('mongoose');
+const auth = require('../middleware/auth');
 
 app.get('/', (req, res) => {
     return res.redirect('home.html')
@@ -41,7 +42,7 @@ app.post('/login', async(req, res) => {
     res.redirect('./blog_login.html');
 });
 
-app.post('/posted', async(req, res) => {
+app.post('/posted', [auth], async(req, res) => {
     mongoose.save();
 
     res.redirect('./blog_login.html');
