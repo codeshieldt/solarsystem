@@ -7,7 +7,7 @@ app.get('/', (req, res) => {
     return res.redirect('home.html')
 });
 
-app.post('/posted', async(req, res) => {
+app.post('/submitted', async(req, res) => {
     const { error } = emailValidate(req.body);
     if(error) return res.redirect('./write_invalid.html');
 
@@ -18,7 +18,7 @@ app.post('/posted', async(req, res) => {
 
     email = await email.save();
     
-    res.redirect('./blogs.html');
+    res.redirect('./submitted.html');
 });
 
 module.exports = app;
