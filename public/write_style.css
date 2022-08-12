@@ -76,11 +76,7 @@ body {
     cursor: pointer;
 }
 
-.acc{
-    font-size: medium;
-}
-
-.sect {
+.email {
     font-size: x-large;
     width: 400px;
     height: 400px;
@@ -93,13 +89,13 @@ body {
     color: white;
 }
 
-.sect ol li {
+.email input[type="text"]
+{
+    border: none;
+    border-bottom: 5px solid rgb(55, 70, 202);
+    background: transparent;
+    outline: none;
     font-size: medium;
-    display: block;
-    text-align: left;
-}
-
-h3 {
-    text-align: left;
-    color: white;
+    font-family: "Sofia", sans-serif;
+    color: #4125fb;
 }

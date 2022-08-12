@@ -119,7 +119,7 @@ body {
 }
 
 .manual-btn{
-    border: 2px solid #40d3dc;
+    border: 2px solid #4125fb;
     padding: 5px;
     border-radius: 10px;
     cursor: pointer;
@@ -131,7 +131,7 @@ body {
 }
 
 .manual-btn:hover{
-    background: #40d3dc;
+    background: #4125fb;
 }
 
 #radio1:checked ~ .first{

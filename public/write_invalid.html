@@ -6,26 +6,32 @@
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia"/>
-        <link href="./blogs_style.css" rel="stylesheet" type="text/css"/>
         <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <link href="./write_style.css" rel="stylesheet" type="text/css"/>
         <title> SolarSys-Blog </title>
     </head>
+
     <body>
         <div class="links">
             <ul>
                 <li><a href="./home.html"> HOME </a></li>
                 <li><a href="./blogs.html"> BLOGS </a></li>
-                <li><a href="./write.html"> WRITE </a></li>
                 <li><a href="./about.html"> ABOUT </a></li>
             </ul>
         </div>
-        <div class="world">
-            Blogs will soon be written. To write some, just
-            sign up!
-        </div>
-        <div class="blog">
-            <p>Want to blog with us?</p>
-            <a href="./login.html"> Just Sign up of Login here! </a>
-        </div>
+        <form action="/posted" method="post">
+            <div class="email">
+                <p><font color="red">*Invalid Email</font></p>
+                <p>Enter Your Email</p>
+                <input type="text" name="email" placeholder="Enter Email.." required/> 
+            </div>
+            
+            <div class="blogbox">            
+                <textarea name="text" placeholder="Enter your blog" rows="25" cols="50" wrap></textarea>
+                <p>
+                    <input type="submit" value="Post"/>
+                </p>
+            </div>
+        </form>
     </body>
 </html>

@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia"/>
         <link rel="icon" type="image/x-icon" href="favicon.ico">
         <link href="./write_style.css" rel="stylesheet" type="text/css"/>
-        <title> Web-Page </title>
+        <title> SolarSys-Blog </title>
     </head>
 
     <body>
@@ -19,22 +19,18 @@
                 <li><a href="./about.html"> ABOUT </a></li>
             </ul>
         </div>
-        <div class="blogbox">
-            <form action="/posted" method="post">
-                <textarea name="text" placeholder="Enter your blog" rows="25" cols="50" wrap required></textarea>
+        <form action="/posted" method="post">
+            <div class="email">
+                <p>Enter Your Email</p>
+                <input type="text" name="email" placeholder="Enter Email.." required/> 
+            </div>
+            
+            <div class="blogbox">            
+                <textarea name="text" placeholder="Enter your blog" rows="25" cols="50" wrap></textarea>
                 <p>
                     <input type="submit" value="Post"/>
                 </p>
-            </form>
-        </div>
-    
-        <div class="sect">
-            <h3> What are we? </h3>
-            <ol>
-                <li>Innovation</li>
-                <li>Pollution Free</li>
-                <li>Motivation</li>
-            </ol>
-        </div>
+            </div>
+        </form>
     </body>
 </html>
