@@ -52,6 +52,18 @@ body {
     color: white;
 }
 
+.solarsystem {
+    width: 500px;
+    height: 300px;
+    background: transparent;
+    top: 110%;
+    right: 17%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    color: white;
+}
+
 .blog {
     width: 200px;
     height: 200px;
@@ -62,4 +74,93 @@ body {
     transform: translate(-50%, -50%);
     box-sizing: border-box;
     color: white;
+}
+
+.block {
+    top: 130%;
+    left: 23%;
+    margin-bottom: 100px;
+    position:absolute;
+}
+
+.slider{
+    width: 800px;
+    height: 500px;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+.slides{
+    width: 500%;
+    height: 550px;
+    display: flex;
+}
+
+.slides input{
+    display: none;
+}
+
+.slides{
+    width: 20%;
+    transition: 2s;
+}
+
+.slide img{
+    width: 800px;
+    height: 500px;
+}
+
+.navigation-manual{
+    position:absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn{
+    border: 2px solid #40d3dc;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+
+.manual-btn:hover{
+    background: #40d3dc;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+#radio2:checked ~ .first{
+    margin-left: -500%;
+}
+#radio3:checked ~ .first{
+    margin-left: -1000%;
+}
+#radio4:checked ~ .first{
+    margin-left: -1500%;
+}
+#radio5:checked ~ .first{
+    margin-left: -2000%;
+}
+#radio6:checked ~ .first{
+    margin-left: -2500%;
+}
+#radio7:checked ~ .first{
+    margin-left: -3000%;
+}
+#radio8:checked ~ .first{
+    margin-left: -3500%;
+}
+
+.nothing {
+    background: transparent;
+    top: 200%;
+    position: absolute;
 }
